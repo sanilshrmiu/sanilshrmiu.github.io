@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Lucida Sans Unicode";
+    src: url("../fonts/l_10646.ttf");
+}
+@font-face {
+    font-family: "monospace";
+    src: url("../fonts/Monospace.ttf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 11pt;
+    font-family: "Georgia";
+    background-image: url("../images/recepie/silverware.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    color: #404040;
+    padding: 10px;
+}
+
+ul {
+    list-style-image: url("../images/recepie/pie_icon.gif");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.25em;
+}
+header{
+    text-align: center;
+}
+.heading {
+    text-decoration: underline;
+    background-color: #F0F0F0;
+    color: #A4A400;
+    padding: 10px;
+    font-family: "Arial";
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 18pt;
+}
+
+.main-heading {
+    font-size: 22pt;
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+}
+
+.ingredients {
+    font-family: "Helvetica";
+}
+
+span.abbreviation {
+    text-decoration: underline;
+    cursor: help;
+}
+.links-container{
+
+}
+.links-container a {
+    color: #A4A400;
+}
+.right-alignment{
+    text-align: right;
+}
+.footer img {
+    width: 100px;
+    margin: 10px;
+}
+.footer ul {
+    margin: 0;
+    text-align: end;
+}
+.footer li {
+    display: inline;
+}
+.footer li a {
+    display: inline-block;
+}
+.block-element{
+    display: block;
+}
+.bg-yellow {
+    background: #FFFFA8;
+}
+.comments {
+    margin: 1rem 3rem;
+}
+.italic {
+    font-style: italic;
+}
