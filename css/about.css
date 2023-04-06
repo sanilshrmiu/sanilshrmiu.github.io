@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Arvo";
+    src: url(../fonts/Arvo-Regular.ttf);
+}
+
+body, .clear-margin-padding {
+    font-family: "Arvo";
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+.center-element{
+    text-align: center;
+}
+.container{
+    background-color: #ccc;
+    padding: 30px;
+}
+.header{
+    font-family: 'Lato';
+    color: #222;
+}
+.movie-imdb{
+    text-decoration: none;
+    color: red;
+}
+.moods{
+    margin: 20px;
+}
+.footer {
+}
+.footer ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: end;
+}
+.footer li {
+    display: inline;
+}
+.footer li a {
+    display: inline-block;
+}
+.footer img {
+    width: 100px;
+}
