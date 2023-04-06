@@ -74,3 +74,9 @@ dd{
     opacity: 0.9;
     transform: scale(1.2);
 }
+.happy-mood{
+    width: 200px;
+}
+.angry-mood{
+    width: 180px;
+}
