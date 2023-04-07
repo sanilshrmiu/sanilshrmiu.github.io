@@ -33,6 +33,9 @@ body, .clear-margin-padding {
     text-decoration: none;
     color: red;
 }
+.movie-imdb:hover{
+    text-decoration: underline;
+}
 .moods{
     margin: 20px;
 }
