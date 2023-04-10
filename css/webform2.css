@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #333;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+#header {
+    font-family: 'Arial';
+    color: #ffffff;
+    padding: 25px 50px;
+    height: 75px;
+    background: #4fb1ea;     
+    background: linear-gradient(to bottom,  #4fb1ea 0%,#239fe5 100%); 
+}
+#content {
+  padding-bottom: 100px;
+  color: #666;
+  padding-top: 50px;;
+}
+#content label{
+    margin: 10px ;
+}
+#footer {
+    background: #ddd;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.header-text{
+    font-size: 20px;
+    font-weight: 500;
+    float: left;
+    width: 30%;
+}
+.navigation-custom{
+    float: left;
+    width: 30%;
+}
+.user-nav{
+    float: left;
+    text-align: right;
+    width: 40%;
+}
+.nav-link{
+    color: rgba(255,255,255,.9);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 30px;
+    position: relative;
+    display: inline-block;
+    border-left: #fff solid 1px;
+}
+.text-20{
+    font-size: 20px;
+}
+.button-container{
+    margin-top: 20px;
+    text-align: right;
+}
+.button-container button{
+    margin-left: 20px;
+}
+.footer ul {
+    margin: 0;
+    width: 100%;
+    text-align: end;
+}
+.footer li {
+    display: inline;
+}
+.footer li a {
+    display: inline-block;
+}
+.footer img {
+    width: 100px;
+    margin: 10px;
+}
