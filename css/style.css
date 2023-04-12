@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Lato";
-    src: url(../fonts/Lato-Regular.ttf);
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
 }
 html,
 body {
@@ -30,71 +30,71 @@ body {
   left: 0;
 }
 .header {
-    background-image: url("../images/banner2.jpeg");
-    padding: 30px;
-    text-align: left;
-    height: 120px;
+  background-image: url("../images/banner2.jpeg");
+  padding: 30px;
+  text-align: left;
+  height: 120px;
 }
 .header img {
-    border-radius: 50%;
-    border: 2px white solid;
-    width: 200px;
-    height: 200px;
+  border-radius: 50%;
+  border: 2px white solid;
+  width: 200px;
+  height: 200px;
 }
 .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    background-color: #999;
-    padding: 25px;
-    min-height: 60px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: #999;
+  padding: 25px;
+  min-height: 60px;
 }
 .footer p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .footer img {
-    width: 100px;
-    margin: 10px;
+  width: 100px;
+  margin: 10px;
 }
 .content {
-    min-height: 300px;
-    padding: 60px;
+  min-height: 300px;
+  padding: 60px;
 }
-.content a{
-    text-decoration: none;
-    color: inherit;
+.content a {
+  text-decoration: none;
+  color: inherit;
 }
 .content ul {
-    margin: 0;
+  margin: 0;
 }
 .content li {
-    display: inline;
-    margin: 30px;
-    padding: 0 2%;
-    font-size: 1.15em;
+  display: inline;
+  margin: 30px;
+  padding: 0 2%;
+  font-size: 1.15em;
 }
 .content li a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: inline-block;
 }
 .content li a:hover {
-    background-color: #77777766;
+  background-color: #77777766;
 }
-.footer-container{
-    display: flex;
-    align-items: center;
+.footer-container {
+  display: flex;
+  align-items: center;
 }
 .footer ul {
-    margin: 0;
-    width: 100%;
-    text-align: end;
+  margin: 0;
+  width: 100%;
+  text-align: end;
 }
 .footer li {
-    display: inline;
+  display: inline;
 }
 .footer li a {
-    display: inline-block;
+  display: inline-block;
 }
