@@ -1,6 +1,6 @@
 "use strict";
 
-const Employee = require("./model/employee");
+const Employee = require("./employee");
 
 const jimHanson = new Employee(
   "Jim Hanson",

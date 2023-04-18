@@ -1,6 +1,6 @@
 "use strict";
 
-const Person = require("./model/person");
+const Person = require("./person");
 
 const persons = [
   new Person("Ana Smith", new Date("1998-12-15")),
