@@ -1,0 +1,30 @@
+.banner {
+  margin-top: 40px;
+  max-height: 450px;
+  overflow: hidden;
+}
+.banner img {
+  object-fit: cover;
+  height: 450px;
+}
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+.products-thumbnail {
+  max-height: 300px;
+  overflow: hidden;
+}
+.products-thumbnail img {
+  object-fit: cover;
+  height: 300px;
+}
+.thumbnail-image {
+  max-width: 600px;
+  max-height: 700px;
+}
+.thumbnail-image img {
+  object-fit: cover;
+  height: 600px;
+}
