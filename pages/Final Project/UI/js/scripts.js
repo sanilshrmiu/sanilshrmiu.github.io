@@ -33,11 +33,12 @@ async function login(data) {
     if (json != false) {
       let myModalEl = document.getElementById("loginModal");
       let modal = bootstrap.Modal.getInstance(myModalEl);
+      document.getElementById("incorrect-password").classList.add("d-none");
       modal.hide();
       storeInLocalStorage(json);
       renderPage();
     } else {
-      console.log("failed");
+      document.getElementById("incorrect-password").classList.remove("d-none");
     }
     // populateSearch(json);
   } else {
