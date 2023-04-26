@@ -27,17 +27,17 @@ async function displayAllBooks() {
     tr.appendChild(tdPrice);
 
     const tdAction = document.createElement("td");
-    tdAction.innerText = `<button type="button" class="btn btn-danger" onclick="deleteBook(${book.price})">
+    tdAction.innerHTML = `<button type="button" class="btn btn-danger" onclick="deleteBook(${book.id})">
     Delete Book
 </button>`;
     tr.appendChild(tdAction);
 
-    // Add click listener to each table row to populate the form for update
     tr.addEventListener("click", () => {
-      document.getElementById("titleInput").value = book.title;
-      document.getElementById("descriptionInput").value = book.description;
-      document.getElementById("priceInput").value = book.price;
-      document.getElementById("bookIdInput").value = book.id;
+      document.getElementById("updateTitleInput").value = book.title;
+      document.getElementById("updateDescriptionInput").value =
+        book.description;
+      document.getElementById("updatePriceInput").value = book.price;
+      document.getElementById("idInput").value = book.id;
     });
 
     bookList.appendChild(tr);
@@ -115,18 +115,11 @@ submitButton.addEventListener("click", () => {
 const updateButton = document.getElementById("updateButton");
 updateButton.addEventListener("click", () => {
   const id = document.getElementById("idInput").value;
-  const title = document.getElementById("titleInput").value;
-  const description = document.getElementById("descriptionInput").value;
-  const price = document.getElementById("priceInput").value;
+  const title = document.getElementById("updateTitleInput").value;
+  const description = document.getElementById("updateDescriptionInput").value;
+  const price = document.getElementById("updatePriceInput").value;
 
   updateBook(id, title, description, price);
-});
-
-const deleteButton = document.getElementById("deleteButton");
-deleteButton.addEventListener("click", () => {
-  const id = document.getElementById("idInput").value;
-
-  deleteBook(id);
 });
 
 displayAllBooks();

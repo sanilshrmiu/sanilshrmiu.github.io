@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book List</title>
-    <!-- Bootstrap 5 CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
         crossorigin="anonymous" />
 </head>
@@ -39,7 +38,7 @@
                 </form>
             </div>
             <div class="col-md-6">
-                <h2>Update/Delete Book</h2>
+                <h2>Update Book</h2>
                 <form>
                     <div class="mb-3">
                         <label for="idInput" class="form-label">ID</label>
@@ -47,17 +46,17 @@
                     </div>
                     <div class="mb-3">
                         <label for="titleInput" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="titleInput" placeholder="Enter book title"
+                        <input type="text" class="form-control" id="updateTitleInput" placeholder="Enter book title"
                             required />
                     </div>
                     <div class="mb-3">
                         <label for="descriptionInput" class="form-label">Description</label>
-                        <textarea class="form-control" id="descriptionInput" rows="3"
+                        <textarea class="form-control" id="updateDescriptionInput" rows="3"
                             placeholder="Enter book description" required></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="priceInput" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="priceInput" placeholder="Enter book price"
+                        <input type="number" class="form-control" id="updatePriceInput" placeholder="Enter book price"
                             required />
                     </div>
                     <button type="button" class="btn btn-primary" id="updateButton">
@@ -68,6 +67,9 @@
         </div>
         <hr />
         <h2>Book List</h2>
+        <hr />
+        <label class="text text-primary">Click on the individual row to populate the Update form above</label>
+        <hr />
         <table class="table">
             <thead>
                 <tr>
