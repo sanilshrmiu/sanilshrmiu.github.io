@@ -24,6 +24,7 @@ class User {
     data.token = generateToken(15);
     users.splice(index, 1, data);
     const resp = {
+      id: data.id,
       fullName: data.fullName,
       email: data.email,
       token: data.token,

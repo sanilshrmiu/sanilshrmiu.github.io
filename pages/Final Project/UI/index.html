@@ -76,13 +76,14 @@
                     <div class="welcome-user">
                     </div>
                 </div>
-                <form class="d-flex">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
-                </form>
+                <div class="d-flex" id="cart-icon">
+                    <a href="./pages/cart.html"><button class="btn btn-outline-dark">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill" id="cartCount"></span>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -121,6 +122,7 @@
     </div>
     <!-- Product section-->
     <div id="main-panel">
+        <div id="toast-container"></div>
         <section class="py-5 d-none" id="descr">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
@@ -137,8 +139,14 @@
                         </div>
                         <p class="lead desc-element"></p>
                         <div class="d-flex" id="customForm">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
-                                style="max-width: 5rem" />
+                            <input id="productID" hidden disabled>
+                            <div class="wrapper mx-2">
+                                <button class="plusminus" onclick="handleMinus()">-</button>
+                                <input type="number" class="num" value="0" id="inputQuantity" disabled />
+                                <button class="plusminus" onclick="handlePlus()">+</button>
+                            </div>
+                            <!-- <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
+                                style="max-width: 5rem" /> -->
                             <button class="btn btn-outline-dark flex-shrink-0" type="button" id="addToCart">
                                 <i class="bi-cart-fill me-1"></i>
                                 Add to cart
@@ -171,6 +179,7 @@
         </div>
     </section>
     <!-- Footer-->
+    <button onclick="showToast('Test Message ')">Test</button>
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Shop Cart 2023</p>
@@ -178,8 +187,14 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
     <!-- Core theme JS-->
+    <script src="js/apiCalls.js"></script>
+    <script src="js/addToCartApiCall.js"></script>
+    <script src="js/loginApiCall.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/toast.js"></script>
+
 </body>
 
 </html>

@@ -20,10 +20,15 @@ class Product {
     return this;
   }
 
-  sellProduct(proId, quantity) {
-    const index = items.findIndex((i) => i.id == proId);
-    this.quantity -= quantity;
-    items.splice(index, 1, this);
+  sellProduct(quantity) {
+    const index = items.findIndex((i) => i.id == this.id);
+    this.stock -= quantity;
+    return this;
+  }
+
+  adjustProduct(quantity) {
+    const index = items.findIndex((i) => i.id == this.id);
+    this.stock += quantity;
     return this;
   }
 
